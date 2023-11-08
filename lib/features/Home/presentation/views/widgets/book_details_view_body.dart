@@ -3,6 +3,7 @@ import 'package:bookly_app/features/Home/presentation/views/widgets/book_details
 import 'package:bookly_app/features/Home/presentation/views/widgets/book_details_custom_button.dart';
 import 'package:bookly_app/features/Home/presentation/views/widgets/book_rating.dart';
 import 'package:bookly_app/features/Home/presentation/views/widgets/custom_book_item.dart';
+import 'package:bookly_app/features/Home/presentation/views/widgets/similar_books_list_view.dart';
 import 'package:flutter/material.dart';
 
 class BookDetailsViewBody extends StatelessWidget {
@@ -16,7 +17,7 @@ class BookDetailsViewBody extends StatelessWidget {
         children: [
           const BookDetailsCustomAppBar(),
           SizedBox(
-            width: MediaQuery.of(context).size.width * .48,
+            width: MediaQuery.of(context).size.width * .45,
             child: const CustomBookItem(),
           ),
           const SizedBox(
@@ -47,6 +48,25 @@ class BookDetailsViewBody extends StatelessWidget {
             height: 37,
           ),
           const BookDetailsCustomButton(),
+          const SizedBox(
+            height: 50,
+          ),
+          Align(
+            alignment: Alignment.centerLeft,
+            child: Text(
+              'You can also like',
+              style: Styles.textStyle14.copyWith(
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+          ),
+          const SizedBox(
+            height: 16,
+          ),
+          const SimilarBooksListView(),
+          const SizedBox(
+            height: 40,
+          ),
         ],
       ),
     );
