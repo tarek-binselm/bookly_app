@@ -4,7 +4,7 @@ abstract class FeaturedBooksState {
   const FeaturedBooksState();
 }
 
-final class FeaturedBooksCubitInitial extends FeaturedBooksState {}
+final class FeaturedBooksInitial extends FeaturedBooksState {}
 
 final class FeaturedBooksLoading extends FeaturedBooksState {}
 
