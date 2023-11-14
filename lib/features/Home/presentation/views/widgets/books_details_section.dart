@@ -14,7 +14,9 @@ class BookDetailsSection extends StatelessWidget {
       children: [
         SizedBox(
           width: MediaQuery.of(context).size.width * .5,
-          child: const CustomBookItem(),
+          child: const CustomBookItem(
+            imageUrl: 'https://images.unsplash.com/photo-1566438480900-0609be27a4be?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aW1hZ2V8ZW58MHx8MHx8fDA%3D',
+          ),
         ),
         const SizedBox(
           height: 43,
